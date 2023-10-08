@@ -364,6 +364,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -445,7 +447,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 }
 
 .section {
-    padding: 120px 0;
+    padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+.section {
+        padding: 120px 0;
+    }
 }
 
 .titel-two {
@@ -471,6 +479,22 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     background-color: var(--fill);
     margin-bottom: 8px;
 }
+
+@media only screen and (max-width: 1158px) {
+  .svg-icon-two {
+      display: none;
+  } 
+  .div-icon-two {
+    display: none;
+  }
+    
+  
+}
+
+
+
+
+
 
 
 .div-team-list {
@@ -561,16 +585,78 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     gap: 24px;
 }
 
+@media only screen and (max-width: 767px) {
+.main-text {
+        display: block;
+       
+    }
+}
+
+@media only screen and (max-width: 1157px) {
+.main-text {
+   
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: left;
+}
+   
+}
+
 .main-text-li {
     width: 264px;
+}
+
+@media only screen and (max-width: 767px) {
+   .main-text-li:not(:last-child) {
+    margin-bottom: 72px;
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+.main-text-li {
+        width: 356px;
+       
+    }
+    
+    .main-text {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+}
+
+@media only screen and (max-width: 1157px) {
+   .title-three-bolt {
+    
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        
+   }
 }
 
 
 
 .team-ul {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    justify-content: center;
+   
 }
+
+@media only screen and (min-width: 768px) {
+.team-ul {
+       row-gap: 64px;
+       column-gap: 24px;
+       
+    }
+}
+
 
 .team-li {
     
@@ -594,18 +680,49 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 .portfolio-ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
     row-gap: 48px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+   .portfolio-ul {
+    row-gap: 72px;
+   }
+
+   .portfolio-li {
+    width: 356px;
+
+   }
+
+   .footer-div {
+    padding: 0 108px;
+    
+   }
 }
 
 
-.portfolio-li:nth-child(3n) {
-    margin-right: 0;
+
+.portfolio-img {
+    height: 280px;
 }
 
-.portfolio-li {
-    transition: box-shadow var(--transition);
+@media only screen and (min-width: 767px) and (max-width: 1157px) {
+.portfolio-img {
+    width: 356px;
+    height: 300px;
+    }
 }
+
+@media only screen and (min-width: 1158px) {
+   .portfolio-img {
+    width: 360px;
+    height: 300px;
+   }
+}
+
+
+
 
 .portfolio-li:hover,
 .portfolio-li:focus {
@@ -634,8 +751,14 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 
 /* ------------------FOOTER--------------- */
 .footer {
-    padding: 100px 0;
+    padding: 96px 0;
     background-color: var(--navy-color);
+}
+
+@media only screen and (min-width: 1158px) {
+.footer {
+    padding: 100px 0;
+  }
 }
 
 .logo-studio-footer {
@@ -652,25 +775,96 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     color: var(--fill);
 }
 
+
+
 .footer-logo {
     margin-bottom: 16px;
     display: inline-block;
     padding: 0;
 }
 
+@media only screen and (max-width: 767px){
+    .footer-logo {
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+
+
 .footer-div {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 767px) {
+    .footer-div {
+            justify-content: center;
+        }
+}
+
+
+
 
 .div-logo-footer {
     margin-left: 120px;
     width: 208px;
 }
 
+@media only screen and (max-width: 767px) {
+    .div-logo-footer {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .div-logo-footer {
+        margin-left: 24px;
+
+    }
+
+}
+
+
+
 .div-form-footer {
     margin-left: 80px;
 }
+
+@media only screen and (max-width: 767px){
+.div-form-footer {
+        margin: 0;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+.div-form-footer {
+        margin-left: 0px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+   
+        .div-logo-footer-one {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 72px;
+           
+        }
+        
+       
+}
+
+
+
+
 
 .footer-ul {
     display: flex;
@@ -681,6 +875,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     font-weight: 500;
     margin-bottom: 16px;
     color: var(--white-color);
+}
+
+@media only screen and (max-width: 767px) {
+    .paragraph-footer-two {
+       text-align: center;
+       width: 100%;
+}
 }
 
 .social-list-link-footer:hover,
@@ -973,9 +1174,24 @@ border-color: #4D5AE5;
     color: var(--white-color);
 }
 
+@media only screen and (max-width: 767px) {
+.imput-footer {
+    width: 100%;
+}
+}
+
 .form-footer {
     display: flex;
     gap: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .form-footer {
+            display: flex;
+            flex-direction: column;
+            width: 288px;
+
+        }
 }
 
 .btn-footer {
@@ -1004,6 +1220,14 @@ border-color: #4D5AE5;
 .btn-footer:hover, 
 .btn-footer:focus {
     background-color: var(--ocean-color);
+}
+
+@media only screen and (max-width: 767px) {
+   .btn-footer {
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+   }
 }
 
 .svg-footer {
