@@ -48,17 +48,17 @@
             </ul>
         </address>
 
-        <button type="button" class="mobile-menu-open" js-open-menu>
+        <button type="button" class="mobile-menu-open">
             <svg class="mobile-menu-button" width="24" height="24">
                 <use href="./images/icons.svg#icon-mobile-button"></use>
             </svg>
         </button>
 
 
-        <div class="mobile-menu" data-modal-mobile>
+        <div class="mobile-menu" >
             <div class="container mobile-container">
         
-                <button class="mobile-menu-close-btn" js-close-menu>
+                <button class="mobile-menu-close-btn">
                     <svg class="mobile-menu-close-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-defs"></use>
                     </svg>
@@ -135,7 +135,7 @@
         <section class="hero-section">
             <div class="container">
               <h1 class="hero-title">Effective Solutions for Your Business</h1>
-              <button class="main-button" type="button" data-modal-open>Order Service</button>
+              <button class="main-button" type="button" >Order Service</button>
             </div>
         </section>
       
@@ -195,7 +195,11 @@
                 <h2 class="titel-two">Our Team</h2>
                 <ul class="list team-ul">
                     <li class="team-li">
-                        <img src="./images/img-1.jpg" alt="man" width="264">
+                        <img 
+                        srcset="./images/team/team-1-264.jpg 264w, ./images/team/team-1-528@2x.jpg 528w" 
+                        sizes="264px"
+                        src="./images/team/team-1-264.jpg" 
+                        alt="man" width="264" height="260">
                         <div class="person-text-div">
                             <h3 class="title-three title-team">Mark Guerrero</h3>
                             <p class="paragraph paragraph-team">Product Designer</p>
@@ -234,7 +238,11 @@
                     </li>
 
                     <li class="team-li">
-                        <img src="./images/img-2.jpg" alt="man" width="264">
+                        <img 
+                         srcset="./images/team/team-2-264.jpg 264w, ./images/team/team-2-528@2x.jpg 528w" 
+                         sizes="264px"
+                        src="./images/team/team-2-264.jpg" 
+                        alt="man" width="264">
                         <div class="person-text-div">
                             <h3 class="title-three title-team">Tom Ford</h3>
                             <p class="paragraph paragraph-team">Frontend Developer</p>
@@ -273,7 +281,11 @@
                     </li>
 
                     <li class="team-li">
-                        <img src="./images/img-3.jpg" alt="women" width="264">
+                        <img
+                         srcset="./images/team/team-3-264.jpg 264w, ./images/team/team-3-528@2x.jpg 528w" 
+                        sizes="264px"
+                        src="./images/team/team-3-264.jpg" 
+                        alt="women" width="264" height="260">
                         <div class="person-text-div">
                             <h3 class="title-three title-team">Camila Garcia</h3>
                             <p class="paragraph paragraph-team">Marketing</p>
@@ -312,7 +324,11 @@
                     </li>
 
                     <li class="team-li">
-                        <img src="./images/img-4.jpg" alt="man" width="264">
+                        <img 
+                         srcset="./images/team/team-4-264.jpg 264w, ./images/team/team-4-528@2x.jpg 528w"
+                        sizes="264px"
+                        src="./images/team/team-4-264.jpg" 
+                        alt="man" width="264" height="260">
                         <div class="person-text-div">
                             <h3 class="title-three title-team">Daniel Wilson</h3>
                             <p class="paragraph paragraph-team">UI Designer</p>
@@ -361,7 +377,24 @@
                     <li class="portfolio-li">
                        
                             <div class="div-team-list">
-                                <img class="portfolio-img" src="./images/portfolio/img-1.jpg" alt="seven mobile screens with application pages" width="360">
+                                <img class="portfolio-img"
+                                srcset="
+                                ./images/portfolio/img-1_288.jpg 288w,
+                                ./images/portfolio/img-1_356.jpg 356w,
+                                ./images/portfolio/img-1_360.jpg 360w, 
+                                ./images/portfolio/img-1_576.jpg 576w, 
+                                ./images/portfolio/img-1_712.jpg 712w,
+                                ./images/portfolio/img-1_720.jpg 720w
+                                "
+                                sizes="
+                                (min-width: 1158px) 360px, 
+                                (min-width: 768px) 356px, 
+                                (min-width: 320px) 264px, 100vw"
+                                 src="./images/portfolio/img-1_360.jpg" 
+                                 alt="seven mobile screens with application pages" 
+                                 width="360" 
+                                 height="420"
+                                 loading="lazy">
                                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                            
@@ -375,7 +408,24 @@
                     <li class="portfolio-li">
                         
                             <div class="div-team-list">
-                                <img class="portfolio-img" src="./images/portfolio/img-2.jpg" alt="scans the barcode with a mobile phone" width="360">
+                                <img class="portfolio-img"
+                                  srcset="
+                                ./images/portfolio/img-2_288.jpg 288w,
+                                ./images/portfolio/img-2_356.jpg 356w,
+                                ./images/portfolio/img-2_360.jpg 360w,
+                                ./images/portfolio/img-2_576.jpg 576w, 
+                                ./images/portfolio/img-2_712.jpg 712w,
+                                ./images/portfolio/img-2_720.jpg 720w
+                                "
+                                sizes="
+                                (min-width: 1158px) 360px, 
+                                (min-width: 768px) 356px, 
+                                (min-width: 320px) 264px, 100vw" 
+                                src="./images/portfolio/img-2_356.jpg" 
+                                alt="scans the barcode with a mobile phone" 
+                                width="360" 
+                                height="420"
+                                loading="lazy">
                                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                            
@@ -389,7 +439,24 @@
                     <li class="portfolio-li">
                         
                             <div class="div-team-list">
-                                <img class="portfolio-img" src="./images/portfolio/img-3.jpg" alt="laptop and mobile" width="360">
+                                <img class="portfolio-img"
+                                srcset="
+                                ./images/portfolio/img-3_288.jpg 288w,
+                                ./images/portfolio/img-3_356.jpg 356w,
+                                ./images/portfolio/img-3_360.jpg 360w, 
+                                ./images/portfolio/img-3_576.jpg 576w, 
+                                ./images/portfolio/img-3_712.jpg 712w,
+                                ./images/portfolio/img-3_720.jpg 720w
+                                "
+                                sizes="
+                                (min-width: 1158px) 360px, 
+                                (min-width: 768px) 356px, 
+                                (min-width: 320px) 264px, 100vw" 
+                                src="./images/portfolio/img-3_360.jpg" 
+                                alt="laptop and mobile"
+                                width="360" 
+                                height="420"
+                                loading="lazy">
                                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                             
@@ -403,7 +470,24 @@
                     <li class="portfolio-li">
                         
                             <div class="div-team-list">
-                                <img class="portfolio-img" src="./images/portfolio/img-4.jpg" alt="car steering wheel" width="360">
+                                <img class="portfolio-img"
+                                srcset="
+                                ./images/portfolio/img-4_288.jpg 288w,
+                                ./images/portfolio/img-4_356.jpg 356w,
+                                ./images/portfolio/img-4_360.jpg 360w, 
+                                ./images/portfolio/img-4_576.jpg 576w, 
+                                ./images/portfolio/img-4_712.jpg 712w,
+                                ./images/portfolio/img-4_720.jpg 720w
+                                "
+                                sizes="
+                                (min-width: 1158px) 360px, 
+                                (min-width: 768px) 356px, 
+                                (min-width: 320px) 264px, 100vw" 
+                                src="./images/portfolio/img-4_360.jpg" 
+                                alt="car steering wheel" 
+                                width="360" 
+                                height="420"
+                                loading="lazy">
                                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                            
@@ -415,9 +499,26 @@
                     </li>
 
                     <li class="portfolio-li">
-                        
+                    
                             <div class="div-team-list">
-                                <img class="" src="./images/portfolio/img-5.jpg" alt="moon on mobile screen" width="360">
+                                <img class="portfolio-img"
+                                 srcset="
+                                ./images/portfolio/img-5_288.jpg 288w,
+                                ./images/portfolio/img-5_356.jpg 356w,
+                                ./images/portfolio/img-5_360.jpg 360w, 
+                                ./images/portfolio/img-5_576.jpg 576w, 
+                                ./images/portfolio/img-5_712.jpg 712w,
+                                ./images/portfolio/img-5_720.jpg 720w
+                                "
+                                sizes="
+                                (min-width: 1158px) 360px, 
+                                (min-width: 768px) 356px, 
+                                (min-width: 320px) 264px, 100vw" 
+                                src="./images/portfolio/img-5_360.jpg" 
+                                alt="moon on mobile screen" 
+                                width="360" 
+                                height="420"
+                                loading="lazy">
                                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                            
@@ -431,7 +532,20 @@
                     <li class="portfolio-li">
                        
                             <div class="div-team-list">
-                                <img class="" src="./images/portfolio/img-6.jpg" alt="the girl smiles at the mobile camera" width="360">
+                                <img class="portfolio-img"
+                                 srcset="
+                                 ./images/portfolio/img-6_288.jpg 288w, 
+                                 ./images/portfolio/img-6_356.jpg 356w, 
+                                 ./images/portfolio/img-6_360.jpg 360w, 
+                                 ./images/portfolio/img-6_576.jpg 576w, 
+                                 ./images/portfolio/img-6_712.jpg 712w, 
+                                 ./images/portfolio/img-6_720.jpg 720w"
+                                sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (min-width: 320px) 264px, 100vw" 
+                                src="./images/portfolio/img-6_360.jpg" 
+                                alt="the girl smiles at the mobile camera" 
+                                width="360" 
+                                height="420"
+                                loading="lazy">
                                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                             </div>
                            
@@ -514,9 +628,9 @@
         </div>
     </footer>
 
-    <div class="beckdrop is-hidden" data-modal>
+    <div class="beckdrop is-hidden">
         <div class="modal-window">
-            <button class="close-button" type="button" data-modal-close>
+            <button class="close-button" type="button">
                 <svg class="close-button-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-defs"></use>
                 </svg>
@@ -590,8 +704,7 @@
     </div>
 
   
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+
     
 </body>
 
