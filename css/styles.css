@@ -1306,8 +1306,8 @@ color:rgba(142, 143, 153, 1);
 }
 
 
-@media only screen and (min-width: 767px) {
+/* @media only screen and (min-width: 767px) {
     .mobile-menu {
         display: none;
     }
-}
+} */
