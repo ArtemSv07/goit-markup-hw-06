@@ -366,11 +366,7 @@ img {
     fill: var(--fill);
 }
 
-@media only screen and (min-width: 767px) {
-.mobile-menu {
-    display: none;
-}
-}
+
 /* ---------------/header------------------ */
 
 
@@ -1310,3 +1306,8 @@ color:rgba(142, 143, 153, 1);
 }
 
 
+@media only screen and (min-width: 767px) {
+    .mobile-menu {
+        display: none;
+    }
+}
