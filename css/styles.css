@@ -1137,7 +1137,6 @@ img {
     outline: transparent;
     resize: none;
     transition: border-color var(--transition);
-    color: rgba(46, 47, 66, 0.4);
     background-color: transparent;
     
 }
@@ -1145,7 +1144,11 @@ img {
 .modal-form-message:hover,
 .modal-form-message:focus {
 
-border-color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+::placeholder {
+color:rgba(142, 143, 153, 1);
 }
 
 .modal-form-check:checked + .modal-form-check-desc > .span-form-check {
