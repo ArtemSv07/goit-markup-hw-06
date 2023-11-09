@@ -10,6 +10,10 @@
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b9c9bf1fc33ebd1cb7c709a310d7ace48095106b
   color: #434455;
   background-color: var(--white-color);
 }
@@ -196,7 +200,13 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .mail-tel {
     padding: 0;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+
+    font-size: 12px;
+
+>>>>>>> b9c9bf1fc33ebd1cb7c709a310d7ace48095106b
     line-height: 1.16;
     letter-spacing: 0.04em;
   }
@@ -241,8 +251,13 @@ img {
   background-color: #fcfcfc;
 
   /* opacity: 0;
+<<<<<<< HEAD
      visibility: hidden;
      pointer-events: none; */
+=======
+        visibility: hidden;
+        pointer-events: none; */
+>>>>>>> b9c9bf1fc33ebd1cb7c709a310d7ace48095106b
 }
 
 .mobile-menu.is-open {
@@ -1156,8 +1171,16 @@ img {
   margin-left: 16px;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 767px) {
   .mobile-menu {
     display: none;
   }
 }
+=======
+/* @media only screen and (min-width: 767px) {
+    .mobile-menu {
+        display: none;
+    }
+} */
+>>>>>>> b9c9bf1fc33ebd1cb7c709a310d7ace48095106b
